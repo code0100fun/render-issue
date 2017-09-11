@@ -7,7 +7,6 @@ export default class extends Component {
   @tracked progress = null;
   @tracked playing = false;
   @tracked canPlay = false;
-  @tracked fileUrl = 'https://emberweekend.s3.amazonaws.com/ep-114-ember-weekend.mp3';
   audio: any;
   _progressTimer: any;
 
