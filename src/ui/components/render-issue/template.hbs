@@ -1,1 +1,11 @@
-<div><h1>Welcome to Glimmer!</h1></div>
+<div>
+  <p>Can Play: {{canPlay}}</p>
+  <p>Playing: {{playing}}</p>
+  <p>Duration: {{duration}}</p>
+  <p>Progress: {{progress}}</p>
+  <p>Current Time: {{currentTime}}</p>
+  <p>Time Left: {{timeLeft}}</p>
+  <button onclick={{action getMetaData}}>MetaData</button>
+  <button onclick={{action playPause}}>{{#if playing}}pause{{else}}play{{/if}}</button>
+  <audio data-id="audio" src={{fileUrl}} />
+</div>
